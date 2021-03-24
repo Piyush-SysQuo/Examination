@@ -56,7 +56,7 @@
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:shadowColor="@color/darGray"
                 android:theme="@style/Theme.MaterialComponents.Light"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:backgroundTint="@color/whiteColor"
                 app:cardCornerRadius="@dimen/_10sdp"
                 app:cardElevation="@dimen/_5sdp">
@@ -210,7 +210,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_12sdp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/outlinedTextField"
@@ -220,7 +220,7 @@
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:backgroundTint="@color/deep_orange"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/rollNumberEditText"
@@ -244,7 +244,7 @@
                 android:text="@string/label_submit"
                 android:textColor="@color/whiteColor"
                 android:textSize="@dimen/_16sdp"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:rippleColor="@color/deep_orange" />
 
             <Button

@@ -451,6 +451,7 @@ public class CandidateStatusActivity extends AppCompatActivity implements View.O
             mListOfDevices.setVisibility(View.GONE);
             mStatusTextView.setVisibility(View.GONE);
             deviceSerialLayout.setVisibility(View.GONE);
+
         }
 
         if (true){
