@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context=".activity.PresentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/whiteColor">
+
+        <include layout="@layout/back_button_pressed"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:id="@+id/txt_present"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@drawable/spinner_bc"
+            android:text="Present">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:id="@+id/txt_absent"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@drawable/spinner_bc"
+            android:text="Absent">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:id="@+id/title_roll_no"
+            android:background="@color/light_orange"
+            android:textColor="@color/whiteColor"
+            android:padding="@dimen/_5sdp"
+            android:textAlignment="textStart"
+            android:text="Roll No.">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_weight="1"
+            android:background="@color/light_orange"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:id="@+id/title_name"
+            android:textColor="@color/whiteColor"
+            android:textAlignment="textStart"
+            android:text="Name">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                tools:listitem="@layout/list_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_absent"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                tools:listitem="@layout/list_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

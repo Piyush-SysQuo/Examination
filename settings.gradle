@@ -1,0 +1,3 @@
+include ':iricore'
+include ':app'
+rootProject.name = "Examination"

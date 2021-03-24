@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BypassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/topLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/top_bg"
+            android:background="@drawable/ic_subtraction_bg" />
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/whiteColor"
+            android:id="@+id/btnBack"
+            app:elevation="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bypass_authentication"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/topLayout"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/authTypeKey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/bypass_auth_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/authTypeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Face Registration"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/deep_orange"
+            android:layout_height="wrap_content"
+            style="@null"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/bypass_reason"
+                android:id="@+id/bypassReasonET"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/proofKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proof_image"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <ImageView
+            android:id="@+id/proofImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@color/gray"
+            android:src="@drawable/ic_add"
+            android:padding="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="@string/label_submit"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/background_gradient"
+            android:textSize="@dimen/_16sdp"
+            app:rippleColor="@color/deep_orange"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

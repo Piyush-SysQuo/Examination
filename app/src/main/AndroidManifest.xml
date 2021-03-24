@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inspection.examination">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+ <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"
+        android:maxSdkVersion="29"/>
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.FacifyResultActivity"></activity>
+        <activity android:name=".activity.VerifyCandidateActivity"></activity>
+        <activity android:name=".activity.AddToCentreActivity" />
+        <activity android:name=".activity.CentreDetailsActivity" />
+        <activity
+            android:name=".activity.MoreOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".activity.PresentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.BypassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CandidateStatusActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!-- <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" -->
+            <!-- android:resource="@xml/device_filter"/> -->
+
+        </activity>
+        <activity
+            android:name=".activity.LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddCandidateScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+    </application>
+
+</manifest>
