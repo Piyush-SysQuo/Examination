@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.inspection.examination">
+    package="com.barcode.examination">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -29,29 +29,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.FacifyResultActivity"></activity>
-        <activity android:name=".activity.VerifyCandidateActivity"></activity>
-        <activity android:name=".activity.AddToCentreActivity" />
-        <activity android:name=".activity.CentreDetailsActivity" />
+        <activity android:name="com.barcode.examination.activity.FacifyResultActivity"></activity>
+        <activity android:name="com.barcode.examination.activity.VerifyCandidateActivity"></activity>
+        <activity android:name="com.barcode.examination.activity.AddToCentreActivity" />
+        <activity android:name="com.barcode.examination.activity.CentreDetailsActivity" />
         <activity
-            android:name=".activity.MoreOptions"
+            android:name="com.barcode.examination.activity.MoreOptions"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ScannerActivity"
+            android:name="com.barcode.examination.activity.ScannerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
         <activity
-            android:name=".activity.PresentActivity"
+            android:name="com.barcode.examination.activity.PresentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.DetailsActivity"
+            android:name="com.barcode.examination.activity.DetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".activity.BypassActivity"
+            android:name="com.barcode.examination.activity.BypassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.CandidateStatusActivity"
+            android:name="com.barcode.examination.activity.CandidateStatusActivity"
             android:screenOrientation="portrait">
 
             <!-- <intent-filter> -->
@@ -64,13 +64,13 @@
 
         </activity>
         <activity
-            android:name=".activity.LogInActivity"
+            android:name="com.barcode.examination.activity.LogInActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.OptionActivity"
+            android:name="com.barcode.examination.activity.OptionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SplashScreen"
+            android:name="com.barcode.examination.activity.SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -80,7 +80,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.AddCandidateScannerActivity"
+            android:name="com.barcode.examination.activity.AddCandidateScannerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar" />
     </application>
